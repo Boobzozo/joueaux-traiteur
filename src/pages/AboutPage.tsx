@@ -10,8 +10,10 @@ const AboutPage = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="title mb-6">À Propos de Nous</h1>
             <p className="text-lg text-gray-700 mb-8">
-              Découvrez l'histoire et les valeurs qui font de Jouaux Traiteur
-              un partenaire de confiance pour tous vos événements.
+              Revisitons vos instants d’émotions. Chez Clémence Jouaux Traiteur,
+              nous allions tradition et innovation pour faire de chaque événement
+              un moment inoubliable. Basés en Mayenne, nous intervenons aussi en
+              Ille-et-Vilaine et dans le Morbihan.
             </p>
           </div>
         </div>

@@ -12,11 +12,13 @@ const HomePage = () => {
         <div className="container-custom px-4 mx-auto relative z-10 mt-16">
           <div className="max-w-2xl text-white animate-fade-in">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Des moments de plaisir gastronomique
+              Revisitons vos instants d’émotions
             </h1>
             <p className="text-lg md:text-xl mb-8">
-              Service traiteur d'exception pour tous vos événements. 
-              De 10 à 300 personnes, nous créons des expériences culinaires inoubliables.
+              Chez Clémence Jouaux Traiteur, nous allions tradition et innovation pour
+              faire de chaque événement un moment inoubliable. Basés en Mayenne,
+              nous intervenons également en Ille-et-Vilaine et dans le Morbihan pour vos
+              réceptions professionnelles et familiales.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Link to="/devis" className="btn btn-primary">
@@ -69,6 +71,74 @@ const HomePage = () => {
                 Des formules adaptables à tous types d'événements, du plus intime au plus grandiose, selon vos envies.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services */}
+      <section className="section bg-white">
+        <div className="container-custom px-4 mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="title mb-4">Nos Prestations</h2>
+            <p className="text-lg text-gray-600">
+              Un service complet pour tous vos événements professionnels ou
+              familiaux.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-beige p-6 rounded-lg">
+              <h3 className="font-display text-xl font-semibold mb-2">Cocktails d’inatoires</h3>
+              <p className="text-gray-700">
+                Des bouchées raffinées et des verrines créatives pour des soirées élégantes et conviviales.
+              </p>
+            </div>
+            <div className="bg-beige p-6 rounded-lg">
+              <h3 className="font-display text-xl font-semibold mb-2">Buffets froids</h3>
+              <p className="text-gray-700">
+                Une sélection de mets frais et savoureux, idéale pour des réceptions décontractées.
+              </p>
+            </div>
+            <div className="bg-beige p-6 rounded-lg">
+              <h3 className="font-display text-xl font-semibold mb-2">Brasero &amp; Barbecue</h3>
+              <p className="text-gray-700">
+                Des grillades préparées en extérieur pour une ambiance chaleureuse et gourmande.
+              </p>
+            </div>
+            <div className="bg-beige p-6 rounded-lg">
+              <h3 className="font-display text-xl font-semibold mb-2">Plats traditionnels</h3>
+              <p className="text-gray-700">
+                Des recettes du terroir revisitées avec passion pour retrouver les saveurs authentiques.
+              </p>
+            </div>
+            <div className="bg-beige p-6 rounded-lg">
+              <h3 className="font-display text-xl font-semibold mb-2">Plateaux repas</h3>
+              <p className="text-gray-700">
+                Des repas complets et équilibrés, pratiques pour vos déjeuners professionnels.
+              </p>
+            </div>
+            <div className="bg-beige p-6 rounded-lg">
+              <h3 className="font-display text-xl font-semibold mb-2">Brunchs</h3>
+              <p className="text-gray-700">
+                Une formule généreuse mêlant sucré et salé, parfaite pour vos lendemains de fête.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 space-y-4">
+            <h3 className="font-display text-xl font-semibold text-center">Menus de saison</h3>
+            <p className="text-gray-700 text-center">
+              Menu à 18,00 € : feuilleté de jambon cru et morbier, tartiflette avec salade,
+              panna cotta caramel ou brownie.
+            </p>
+            <p className="text-gray-700 text-center">
+              Menu à 25,00 € : cannelloni de volaille et butternut, cabillaud sauce
+              parmesan citron ou filet mignon sauce à la bière, gratin de pommes de
+              terre à la tomme, asperges gratinées au parmesan, brie, comté, salade
+              vinaigrette, tiramisu spéculoos ou tarte tatin.
+            </p>
+            <p className="text-gray-700 text-center">
+              Participez aussi à nos ateliers culinaires pour découvrir nos recettes
+              et partager un moment convivial autour de la cuisine.
+            </p>
           </div>
         </div>
       </section>

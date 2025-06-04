@@ -114,8 +114,8 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Adresse</h3>
                       <p className="text-gray-700">
-                        123 Rue de la Gastronomie<br />
-                        75000 Paris, France
+                        Mayenne, France<br />
+                        Nous intervenons aussi en Ille-et-Vilaine et dans le Morbihan
                       </p>
                     </div>
                   </div>
@@ -352,13 +352,14 @@ const ContactPage = () => {
           
           <div className="max-w-3xl mx-auto">
             <div className="space-y-6">
-              <div className="bg-beige p-6 rounded-lg">
-                <h3 className="font-display text-xl font-semibold mb-2">Quelle est la zone géographique couverte par vos services ?</h3>
-                <p className="text-gray-700">
-                  Nous intervenons principalement à Paris et en Île-de-France. Pour des événements plus éloignés, 
-                  des frais de déplacement peuvent s'appliquer. N'hésitez pas à nous consulter pour plus d'informations.
-                </p>
-              </div>
+                <div className="bg-beige p-6 rounded-lg">
+                  <h3 className="font-display text-xl font-semibold mb-2">Quelle est la zone géographique couverte par vos services ?</h3>
+                  <p className="text-gray-700">
+                    Basés en Mayenne, nous nous déplaçons également en Ille-et-Vilaine et dans
+                    le Morbihan. Pour des lieux plus éloignés, n'hésitez pas à nous contacter afin
+                    d'étudier la faisabilité de votre projet.
+                  </p>
+                </div>
               
               <div className="bg-beige p-6 rounded-lg">
                 <h3 className="font-display text-xl font-semibold mb-2">Combien de temps à l'avance dois-je réserver ?</h3>
