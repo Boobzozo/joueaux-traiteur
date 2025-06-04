@@ -2,14 +2,17 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import FormulasPage from './pages/FormulasPage';
-import FormulaDetailPage from './pages/FormulaDetailPage';
-import QuotePage from './pages/QuotePage';
-import GalleryPage from './pages/GalleryPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import BackToTopButton from './components/BackToTopButton';
 import ScrollToTop from './components/ScrollToTop';
+import { Suspense, lazy } from 'react';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const FormulasPage = lazy(() => import('./pages/FormulasPage'));
+const FormulaDetailPage = lazy(() => import('./pages/FormulaDetailPage'));
+const QuotePage = lazy(() => import('./pages/QuotePage'));
+const GalleryPage = lazy(() => import('./pages/GalleryPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 function App() {
   return (
@@ -18,17 +21,20 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/formules" element={<FormulasPage />} />
-            <Route path="/formules/:id" element={<FormulaDetailPage />} />
-            <Route path="/devis" element={<QuotePage />} />
-            <Route path="/galerie" element={<GalleryPage />} />
-            <Route path="/a-propos" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
+          <Suspense fallback={<div className="p-8 text-center">Chargement...</div>}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/formules" element={<FormulasPage />} />
+              <Route path="/formules/:id" element={<FormulaDetailPage />} />
+              <Route path="/devis" element={<QuotePage />} />
+              <Route path="/galerie" element={<GalleryPage />} />
+              <Route path="/a-propos" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
+        <BackToTopButton />
       </div>
     </BrowserRouter>
   );

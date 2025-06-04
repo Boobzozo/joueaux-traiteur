@@ -13,8 +13,7 @@ const categories = [
 
 const FormulasPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [filteredFormulas, setFilteredFormulas] = useState<Formula[]>(formulas);
-  const [visibleFormulas, setVisibleFormulas] = useState<Formula[]>([]);
+  const [visibleFormulas, setVisibleFormulas] = useState<Formula[]>(formulas);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -23,8 +22,6 @@ const FormulasPage = () => {
     const filtered = activeCategory === 'all' 
       ? formulas 
       : formulas.filter(formula => formula.category === activeCategory);
-    
-    setFilteredFormulas(filtered);
     
     // Simulate loading for smoother transitions
     setTimeout(() => {
