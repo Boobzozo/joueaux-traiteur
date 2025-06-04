@@ -14,8 +14,8 @@ const Footer = () => {
               <span className="font-display text-2xl font-bold">Jouaux Traiteur</span>
             </Link>
             <p className="text-gray-300 mb-4">
-              Service traiteur d'exception pour tous vos événements.
-              De 10 à 300 personnes, nous créons des moments de plaisir gastronomique.
+              Revisitons vos instants d’émotions. Nous allions tradition et innovation
+              pour faire de chaque événement un moment inoubliable.
             </p>
             <div className="flex space-x-4 mb-6">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-colors duration-300">
@@ -87,8 +87,8 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-primary flex-shrink-0 mt-1" />
                 <span className="text-gray-300">
-                  123 Rue de la Gastronomie<br />
-                  75000 Paris, France
+                  Mayenne, France<br />
+                  Interventions en Ille-et-Vilaine et Morbihan
                 </span>
               </li>
               <li className="flex items-center space-x-3">
