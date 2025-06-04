@@ -24,6 +24,7 @@ const initialFormData: FormData = {
 };
 
 const QuotePage = () => {
+  const today = new Date().toISOString().split('T')[0];
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -213,7 +214,7 @@ const QuotePage = () => {
                         value={formData.eventDate}
                         onChange={handleChange}
                         className={`input ${errors.eventDate ? 'border-red-500 focus:ring-red-500' : ''}`}
-                        min={new Date().toISOString().split('T')[0]}
+                        min={today}
                       />
                       {errors.eventDate && <p className="mt-1 text-sm text-red-500">{errors.eventDate}</p>}
                     </div>
