@@ -37,6 +37,8 @@ npm test
 npm run build
 ```
 
+Une fois la compilation terminée, ouvrez le fichier `dist/index.html` dans votre navigateur ou servez le contenu du dossier `dist` sur votre hébergeur.
+
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE).

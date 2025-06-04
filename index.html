@@ -9,6 +9,10 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      import('/src/main.tsx').catch(() => {
+        window.location.href = './dist/index.html';
+      });
+    </script>
   </body>
 </html>
